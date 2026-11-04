@@ -47,16 +47,38 @@ button{
     border-radius: 50%;
     object-fit: cover;
     border: 2px solid black;
-
 }
+
 main{
     background-color: #deddda;
     padding: 50px 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
     }
+
+    
+#hero{
+    background-image: url("assets/bg-hero.png") ;
+    border-radius: 10px;
+    width: 120%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 80px;
+    color: white;
+}
+
+.button_dec{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 130px;
+}
+
+    
 section{
     display: flex;
     align-items: flex-start;
