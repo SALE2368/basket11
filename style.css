@@ -59,23 +59,34 @@ main{
 
     
 #hero{
-    background-image: url("assets/bg-hero.png") ;
+    box-sizing: border-box;
+    background: url("assets/bg-hero.png") center / cover no-repeat;
     border-radius: 10px;
-    width: 120%;
-    height: 500px;
+    width: 100%;
+    max-width: 1200px;
+    min-height: clamp(260px, 45vw, 500px);
+    padding: clamp(1rem, 4vw, 3rem);
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 1.5rem;
     text-transform: uppercase;
-    font-size: 80px;
     color: white;
+}
+
+#hero > p{
+    margin: 0;
+    font-size: clamp(2rem, 8vw, 5rem);
 }
 
 .button_dec{
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
-    gap: 130px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: clamp(0.75rem, 4vw, 2rem);
 }
 
     
